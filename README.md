@@ -1,7 +1,12 @@
+```© Credits
+Modified Baileys @daffadevv
+Source Bailyes @kyuu
+```
+
 # WhatsApp Baileys
 
 <p align="center">
-  <img src="https://c.top4top.io/m_3551e7put1.mp4" alt="Thumbnail" />
+  <video src="https://b.top4top.io/m_35993ti271.mp4" autoplay muted loop style="max-width: 100%; border-radius: 10px;"></video>
 </p>
 
 WhatsApp Baileys adalah library open‑source yang dirancang untuk membantu developer membangun solusi otomatisasi dan integrasi dengan WhatsApp secara efisien dan langsung. Menggunakan teknologi webclient.t tanpa memerlukan browser, library ini mendukung berbagai fitur seperti manajemen pesan, penanganan chat, administrasi grup, serta pesan interaktif dan tombol aksi untuk pengalaman pengguna yang lebih dinamis.
@@ -322,8 +327,8 @@ forwardingScore: 777,
 isForwarded: false
 },
 externalAdReply: {
-title: "shenń Bot",
-body: "anu team",
+title: "Ravage",
+body: "",
 mediaType: 3,
 thumbnailUrl: "https://example.com/image.jpg",
 mediaUrl: " X ",
