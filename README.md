@@ -42,7 +42,7 @@ Mulailah dengan menginstal library melalui package manager pilihan Anda, lalu ik
 ### Order Message
 
 ```javascript
-await client.sendMessage(groupId, {
+await client.sendMessage(m.chat, {
 orderMessage: {
 orderId: "7778",
 thumbnail: await (await fetch("URL IMG")).buffer(),
