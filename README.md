@@ -1,7 +1,7 @@
 ```
 © Credits
 Modified Baileys @daffadevv
-Source Bailyes @kyuu
+Source Bailyes @yumevtc
 ```
 
 # WhatsApp Baileys
@@ -39,6 +39,65 @@ Mulailah dengan menginstal library melalui package manager pilihan Anda, lalu ik
 
 ## Dokumentasi SendMessage
 
+### Order Message
+
+```javascript
+await client.sendMessage(groupId, {
+orderMessage: {
+orderId: "7778",
+thumbnail: await (await fetch("URL IMG")).buffer(),
+itemCount: 1000,
+status: "INQUIRY",
+surface: "CATALOG",
+message: "dfa kimochi",
+orderTitle: "kyah",
+sellerJid: "0@s.whatsapp.net",
+token: Buffer.from("777777"),
+totalAmount1000: 1000,
+currencyCode: "IDR",
+messageVersion: 2
+}
+}, { quoted: m });
+```
+
+### Review And Pay Message 
+
+```javascript
+await client.sendMessage(m.chat, {
+nativeFlowMessage: {
+buttons: [
+{
+name: "review_and_pay",
+buttonParamsJson: JSON.stringify({
+currency: "IDR",
+total_amount: { value: 100, offset: 100 },
+reference_id: "DAFFA-DEV",
+type: "daffa",
+payment_status: "ganteng",
+payment_timestamp: Date.now(),
+order: {
+status: "completed",
+subtotal: { value: 100, offset: 100 },
+order_type: "PAYMENT_REQUEST",
+items: [
+{
+retailer_id: "item-" + Math.floor(Math.random() * 1e9),
+name: teks,
+amount: { value: 100, offset: 100 },
+quantity: 1
+}
+]
+},
+additional_note: "daffa gntng bet jir",
+native_payment_methods: "",
+share_payment_status: true
+})
+}
+]
+}
+}
+}, { quoted: m })
+```
 ### Tag Status Grup Teks
 
 ```javascript
